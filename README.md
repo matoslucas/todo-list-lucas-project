@@ -27,6 +27,12 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 In the project directory, you can run:
 
+### `yarn server`
+
+Runs Express server<br />
+Open [http://localhost:8080](http://localhost:8080) to view it in the browser.
+
+
 ### `yarn start`
 
 Runs the app in the development mode.<br />
