@@ -20,7 +20,6 @@ Material Design specification,
 Saving items to DB.
 Removing items from the DB.
 
-Created by Lucas Matos.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
