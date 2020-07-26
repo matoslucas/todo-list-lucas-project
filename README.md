@@ -1,3 +1,26 @@
+# Todo List using React, Material-UI, Express, MongoDB
+
+## Installation
+
+1. Clone repo
+2. run `yarn install` 
+
+## Usage 
+
+1. run `yarn build`
+2. run `yarn server`
+3. Navigate to `localhost:8080`
+
+Current working functionality:
+------------------------------
+
+Connecting to MongoDB using Mongoose.
+Querying MongoDB, and displaying items through ejs.
+Saving items to DB.
+Removing items from the DB.
+
+Created by Lucas Matos.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
