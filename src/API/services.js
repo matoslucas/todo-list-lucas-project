@@ -16,6 +16,11 @@ class Services  {
         console.log('get task');
         return axios.get('/api/taskModel')
     };
+
+    deleteTask = (id) =>{
+      console.log('dalete task');
+      return axios.delete(`/api/taskModel/${id}`, id)
+  };
 }  
 
 
