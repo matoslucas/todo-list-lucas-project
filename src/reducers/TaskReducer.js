@@ -10,15 +10,17 @@ export const Action = {
 export const taskReducer = (state, action) => {
     switch (action.type) {
         case Action.ADD_TASK: {
-            Services.postTask(action.task)
-            return [...state, action.task]
+            Services.postTask(action.task);
+            return [...state, action.task];
         }
         case Action.CHECK_TASK:
+            Services.updateTask(action.task.id, action.task);
             let taskIndex = state.findIndex(t => t.id === action.task.id);
-            state[taskIndex].isChecked = action.task.isChecked
+            state[taskIndex].isChecked = action.task.isChecked;
             return state.filter(task => task.id !== action.id);
 
         case Action.REMOVE_TASK: {
+            Services.deleteTask(action.id)
             return state.filter(task => task.id !== action.id)
         }
 

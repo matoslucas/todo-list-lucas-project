@@ -17,10 +17,15 @@ class Services  {
         return axios.get('/api/taskModel')
     };
 
+    updateTask = (id, task) =>{
+      console.log('update task', task, id);
+      return axios.patch(`/api/taskModel/${id}`, task)
+    };
+
     deleteTask = (id) =>{
       console.log('dalete task');
       return axios.delete(`/api/taskModel/${id}`, id)
-  };
+    };
 }  
 
 
