@@ -15,7 +15,8 @@ Current working functionality:
 ------------------------------
 
 Connecting to MongoDB using Mongoose.
-Querying MongoDB, and displaying items through ejs.
+Querying MongoDB, 
+Material Design specification,
 Saving items to DB.
 Removing items from the DB.
 
