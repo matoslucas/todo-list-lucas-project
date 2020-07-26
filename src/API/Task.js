@@ -9,6 +9,18 @@ route.get('/', async (req, res)=>{
     res.json(data)
 });
 
+route.patch('/:taskId', async (req, res)=>{
+    const updatedTask = await Task.updateOne(
+        {id: req.params.taskId},
+        {$set: {isChecked: req.body.isChecked} }
+        );
+    res.json(updatedTask)
+});
+
+route.delete('/:taskId', async (req, res)=>{
+    const removedTask = await Task.remove({id: req.params.taskId});
+    res.json(removedTask)
+});
 
 route.post('/', async (req, res)=>{
 
